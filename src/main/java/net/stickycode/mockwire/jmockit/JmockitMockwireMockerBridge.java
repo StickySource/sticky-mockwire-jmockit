@@ -7,7 +7,6 @@ import javax.inject.Provider;
 
 import net.stickycode.bootstrap.StickyBootstrap;
 import net.stickycode.mockwire.MockwireMockerBridge;
-import net.stickycode.reflector.Fields;
 
 public class JmockitMockwireMockerBridge
     implements MockwireMockerBridge {
@@ -25,7 +24,12 @@ public class JmockitMockwireMockerBridge
 
       @Override
       public Object get() {
-        return Fields.get(target, field);
+        try {
+          return field.get(target);
+        }
+        catch (IllegalArgumentException | IllegalAccessException e) {
+          throw new RuntimeException(e);
+        }
       }
     }, type);
   }
