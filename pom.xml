@@ -10,7 +10,7 @@
 
 	<groupId>net.stickycode.mockwire</groupId>
 	<artifactId>sticky-mockwire-jmockit</artifactId>
-	<version>1.1-SNAPSHOT</version>
+	<version>1.2-SNAPSHOT</version>
 
 	<name>sticky-mockwire-mockito-1</name>
 	<description>Jmockit mocker implementation for Mockwire, used to provide mocks of services not under test in an isolated context</description>
@@ -33,7 +33,7 @@
 		<dependency>
 			<groupId>net.stickycode.mockwire</groupId>
 			<artifactId>sticky-mockwire-tck</artifactId>
-			<version>[9.1,10)</version>
+			<version>[9.3,10)</version>
 			<scope>test</scope>
 		</dependency>
 		<dependency>
@@ -45,7 +45,7 @@
 		<dependency>
 			<groupId>net.stickycode.mockwire</groupId>
 			<artifactId>sticky-mockwire-guice3</artifactId>
-			<version>[3,4)</version>
+			<version>[3.3,4)</version>
 			<scope>test</scope>
 		</dependency>
 		<dependency>
@@ -58,7 +58,7 @@
 		<dependency>
 			<groupId>net.stickycode.mockwire</groupId>
 			<artifactId>sticky-mockwire-api</artifactId>
-			<version>[8.2,9)</version>
+			<version>[8.4,9)</version>
 		</dependency>
 
 	</dependencies>
